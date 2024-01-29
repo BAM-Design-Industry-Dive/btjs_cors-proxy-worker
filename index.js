@@ -1,12 +1,49 @@
-/*
-cors-proxy-worker, a fork by Brian Tucker
-fork of: Zibri's cloudflare-cors-anywhere
-*/
+// cors-proxy-worker
+// fork of: Zibri's cloudflare-cors-anywhere
 
 var blacklist = []; // regexp for blacklisted urls
 
 var whitelist = [
-    "^https?://assets-global\\.website-files\\.com$",
+        "^https://assets-global\\.website-files\\.com$",
+        "^https://www\\.industrydive\\.com$",
+        "^https://brand\\.industrydive\\.com$",
+        "^https://www\\.AgricultureDive\\.com$",
+        "^https://www\\.AutomotiveDive\\.com$",
+        "^https://www\\.BankingDive\\.com$",
+        "^https://www\\.BioPharmaDive\\.com$",
+        "^https://www\\.CStoreDive\\.com/$",
+        "^https://www\\.CFO\\.com$",
+        "^https://www\\.CFODive\\.com$",
+        "^https://www\\.CIODive\\.com$",
+        "^https://www\\.ConstructionDive\\.com$",
+        "^https://www\\.CybersecurityDive\\.com$",
+        "^https://www\\.ESGDive\\.com$",
+        "^https://www\\.FacilitiesDive\\.com$",
+        "^https://www\\.FashionDive\\.com$",
+        "^https://www\\.FoodDive\\.com$",
+        "^https://www\\.GroceryDive\\.com$",
+        "^https://www\\.HealthcareDive\\.com$",
+        "^https://www\\.HigherEdDive\\.com$",
+        "^https://www\\.HotelDive\\.com$",
+        "^https://www\\.HRDive\\.com$",
+        "^https://www\\.K12Dive\\.com$",
+        "^https://www\\.LegalDive\\.com/$",
+        "^https://www\\.ManufacturingDive\\.com/$",
+        "^https://www\\.MarketingDive\\.com$",
+        "^https://www\\.MedTechDive\\.com$",
+        "^https://www\\.MultifamilyDive\\.com$",
+        "^https://www\\.PackagingDive\\.com$",
+        "^https://www\\.PaymentsDive\\.com$",
+        "^https://www\\.PharmaVoice\\.com$",
+        "^https://www\\.Proformative\\.com$",
+        "^https://www\\.RestaurantDive\\.com$",
+        "^https://www\\.RetailDive\\.com$",
+        "^https://www\\.SmartCitiesDive\\.com$",
+        "^https://www\\.SocialMediaToday\\.com$",
+        "^https://www\\.SupplyChainDive\\.com$",
+        "^https://www\\.TruckingDive\\.com$",
+        "^https://www\\.UtilityDive\\.com$",
+        "^https://www\\.WasteDive\\.com$",
 ]
 
 function isListed(uri, listing) {
