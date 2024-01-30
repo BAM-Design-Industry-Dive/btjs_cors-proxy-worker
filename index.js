@@ -16,6 +16,7 @@ var whitelist = [
         "^https://www\\.CFODive\\.com$",
         "^https://www\\.CIODive\\.com$",
         "^https://www\\.ConstructionDive\\.com$",
+        // add CX Dive
         "^https://www\\.CybersecurityDive\\.com$",
         "^https://www\\.ESGDive\\.com$",
         "^https://www\\.FacilitiesDive\\.com$",
