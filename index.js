@@ -4,6 +4,7 @@
 var blacklist = []; // regexp for blacklisted urls
 
 var whitelist = [
+        "^https://brand-tools-2\\.webflow\\.io/$",
         "^https://assets-global\\.website-files\\.com$",
         "^https://www\\.industrydive\\.com$",
         "^https://brand\\.industrydive\\.com$",
